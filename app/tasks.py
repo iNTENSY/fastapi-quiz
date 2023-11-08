@@ -18,7 +18,7 @@ def get_questions_from_jService(db: Session, amount: int = 1):
             db, Question,
             question_id=question['id'],
             text=question['question'],
-            answer=question['answer'][3:-4],
+            answer=question['answer'],
             tip_cost=question['value'],
             category=category
         )
