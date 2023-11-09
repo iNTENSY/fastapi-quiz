@@ -1,5 +1,4 @@
-from typing import List, Optional
-
+from typing import Optional
 from pydantic import BaseModel
 
 
@@ -18,7 +17,6 @@ class QuestionModel(BaseModel):
     category: CategoryModel
     answer: str
     tip_cost: Optional[int] = None
-
 
     class Config:
         orm_mode = True
